@@ -1,0 +1,42 @@
+.color-selector {
+
+    height: 6.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1rem;
+    
+    button.color {
+        font-weight: bold;
+        border: 0.2rem solid rgba(black, 0.1);
+        color: white;
+        text-shadow: 1px 1px 1px black;
+
+        &.selected {
+            border: 0.2rem dotted rgba(black, 0.5);
+        }
+        &.yellow {
+            background-color: var(--yellow);
+        }
+        &.blue {
+            background-color: var(--blue);
+        }
+        &.white {
+            background-color: var(--white);
+            color: black;
+            text-shadow: 1px 1px 1px white;
+        }
+        &.green {
+            background-color: var(--green);
+        }
+        &.red {
+            background-color: var(--red);
+        }
+    }
+
+    
+
+
+
+}

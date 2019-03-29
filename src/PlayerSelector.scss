@@ -1,0 +1,17 @@
+.player-selector {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+
+    button.player {
+        padding: 0.5rem;
+        background-color: transparent;
+        border: none;
+        &.selected {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

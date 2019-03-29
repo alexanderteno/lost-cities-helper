@@ -1,0 +1,52 @@
+.cards-selector {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button.card {
+        padding: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: black;
+        font-weight: bold;
+        border: none;
+        margin-top: unset;
+
+        &.yellow {
+            color: var(--yellow);
+        }
+
+        &.blue {
+            color: var(--blue);
+        }
+
+        &.white {
+            color: var(--white);
+        }
+
+        &.green {
+            color: var(--green);
+        }
+
+        &.red {
+            color: var(--red);
+        }
+
+        &[disabled] {
+            background-color: grey;
+            color: darkgray;
+        }
+
+        &.icon {
+            font-size: 1rem;
+        }
+
+
+
+        &+button.card {
+            margin-left: unset;
+        }
+
+    }
+}
